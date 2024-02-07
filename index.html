@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/darkStyle.css" id="style-link">
+    <link rel="stylesheet" href="./styles/mediaqueries.css" id="mediaqueries-link">
+</head>
+<body>
+    <nav id="nav-bar">
+        <a id="nav-home" href="#"><h3>Yanis Charef</h3></a>
+        <img id="nav-appearance-img" onclick="changeTheme()" src="./photos/icons/theme-icon-off.png">
+        <div class="nav-info-container">
+            <a id="nav-about" href="#about"><h6>About</h6></a>
+            <a id="nav-skills" href="#experience"><h6>Experrience</h6></a>
+            <a id="nav-projects" href="#projects"><h6>Projects</h6></a>
+        </div>
+    </nav>
+    <div id="home">
+        <img id="profile-picture" src="./photos/profile-picture.jpeg">
+        <div class="basic-info">
+            <p id="home-info-hello">Hello, I'm</p>
+            <h1 id="home-info-name">Yanis Charef</h1>
+            <h2 id="home-info-job"><small>Frontend Developer</small></h2>
+            <div class="home-info-buttons">
+                <a href="#"><button id="home-info-download-btn">Download Cv</button></a>
+                <a href="#contacts"><button id="home-info-contact-btn">Contact Me</button></a>
+            </div>
+            
+            <a href="https://github.com/" target="_blank"><img id="github-icon" src="./photos/icons/github-icon.png"></a>
+            <a href="https://twitter.com/" target="_blank"><img id="x-icon" src="./photos/icons/x-icon.jpeg"></a>
+        </div>
+    </div>
+    <div id="about">
+        <img id="profile-picture-2" src="./photos/profile-picture-2.jpg">
+        <div class="about-info">
+            <div id="about-start">
+                <p>Know more</p>
+                <h1>About Me</h1>
+            </div>
+            <div class="about-boxes">
+                <div id="exp-box">
+                    <img id="exp-box-icon" src="./photos/icons/exp-icon.png">
+                        <h4 id="exp-box-h">Experience</h4>
+                        <p id="exp-box-p">2+ years<br>frontend development</p>
+                </div>
+                <div id="edc-box">
+                    <img id="edc-box-icon"  src="./photos/icons/edc-icon.png">
+                    <h4 id="edc-box-h">Education</h4>
+                    <p id="edc-box-p">High School<br>first year at school</p>
+                </div>
+            </div>
+            <p id="about-paragraph">
+                Hello! I'm a versatile software developer who loves creating user-friendly experiences.<br>
+                
+I excel at creating beautiful frontend interfaces and building strong backend solutions.<br>
+                I also enjoy working on desktop and mobile applications.<br>
+                Let's collaborate and bring your ideas to life with the latest technologies!
+            </p>
+        </div>
+    </div>
+    <div id="experience">
+        <p id="experience-p">Explore My</p>
+        <h1 id="experience-h"><b>Experience</b></h1>
+        <div class="experience-boxes">
+            <div id="fontend-box">
+                <h1 id="front-box-header">Frontend Development</h1>
+                <div id="front-box-clm-1">
+                    <div class="skill-frontend">
+                        <img class="occupied-icon" src="./photos/icons/occupied-icon-on.png">
+                        <h3>HTML<br><small style="font-weight: 200;">Advanced</small></h3><p></p>
+                    </div>
+                    <div class="skill-frontend">
+                        <img class="occupied-icon" src="./photos/icons/occupied-icon-on.png">
+                        <h3>CSS<br><small style="font-weight: 200;">Advanced</small></h3><p></p>
+                    </div>
+                    <div class="skill-frontend">
+                        <img class="occupied-icon" src="./photos/icons/occupied-icon-on.png">
+                        <h3>JavaScript<br><small style="font-weight: 200;">Advanced</small></h3><p></p>
+                    </div>
+                </div>
+                <div id="front-box-clm-2">
+                    <div class="skill-frontend">
+                        <img class="occupied-icon" src="./photos/icons/occupied-icon-on.png">
+                        <h3>React<br><small style="font-weight: 200;">Intermediate</small></h3><p></p>
+                    </div>
+                    <div class="skill-frontend">
+                        <img class="occupied-icon" src="./photos/icons/occupied-icon-on.png">
+                        <h3>Typescript<br><small style="font-weight: 200;">Basic</small></h3><p></p>
+                    </div>
+                    <div class="skill-frontend">
+                        <img class="occupied-icon" src="./photos/icons/occupied-icon-on.png">
+                        <h3>Tailwind<br><small style="font-weight: 200;">Basic</small></h3><p></p>
+                    </div>
+                </div>
+            </div>
+            <div id="backend-box">
+                <h1 id="back-box-header">Backend Development</h1>
+                <div id="back-box-clm-1">
+                    <div class="skill-backend">
+                        <img class="occupied-icon" src="./photos/icons/occupied-icon-on.png">
+                        <h3>Python<br><small style="font-weight: 200;">Advanced</small></h3><p></p>
+                    </div>
+                    <div class="skill-backend">
+                        <img class="occupied-icon" src="./photos/icons/occupied-icon-on.png">
+                        <h3>Git<br><small style="font-weight: 200;">Intermediate</small></h3><p></p>
+                    </div>
+                </div>
+                <div id="back-box-clm-2">
+                    <div class="skill-backend">
+                        <img class="occupied-icon" src="./photos/icons/occupied-icon-on.png">
+                        <h3>SQL<br><small style="font-weight: 200;">Basic</small></h3><p></p>
+                    </div>
+                    <div class="skill-backend">
+                        <img class="occupied-icon" src="./photos/icons/occupied-icon-on.png">
+                        <h3>Node.js<br><small style="font-weight: 200;">Basic</small></h3><p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <p id="projects-p">Explore My Recent</p>
+        <h1 id="projects-h">Projects</h1>
+        <div id="projects-boxes">
+            <div id="project-1">
+                <img id="project-1-img" src="./photos/project-1.jpeg">
+                <h3 id="project-1-h">Complexe Math App</h3>
+                <div id="projects-buttons">
+                    <button id="project-1-gb">GitHub</button>
+                    <button id="project-1-tb">Try It</button>
+                </div>
+            </div>
+            <div id="project-2">
+                <img id="project-2-img" src="./photos/project-2.jpeg">
+                <h3 id="project-2-h">Coding language for kids</h3>
+                <div id="projects-buttons">
+                    <button id="project-2-gb">GitHub</button>
+                    <button id="project-2-tb">Try It</button>
+                </div>
+            </div>
+            <div id="project-3">
+                <img id="project-3-img" src="./photos/project-3.jpeg">
+                <h3 id="project-3-h">AI assistant</h3>
+                <div id="projects-buttons">
+                    <button id="project-3-gb">GitHub</button>
+                    <button id="project-3-tb">Try It</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contacts">
+        <p id="contact-p">Get In Touch</p>
+        <h1 id="contact-h">Contact Me</h1>
+        <div id="contact-box">
+            <img id="email-icon" src="./photos/icons/email-icon.png">
+            <p>yanischaref15@gmail.com</p>
+            <img id="phone-icon" src="./photos/icons/phone-icon.png">
+            <p>0656650599</p>
+        </div>
+        <div id="end-links">
+            <a id="end-home" href="#nav-bar"><h2>Home</h2></a>
+            <a id="end-about" href="#about"><h2>About</h2></a>
+            <a id="end-skills" href="#experience"><h2>Skills</h2></a>
+            <a id="end-projects" href="#projects"><h2>Projects</h2></a>
+        </div>
+        <footer id="footer">Copyright © 2024 Yanis Charef, All Right Reserved
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

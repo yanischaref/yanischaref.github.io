@@ -1,0 +1,80 @@
+@media (max-width: 900px) {
+    #home {
+        flex-direction: column;
+        justify-content:  center;
+        align-items: center;
+    }
+
+    .nav-info-container {
+        display: none;
+    }
+
+    #profile-picture {
+        width: 300px;
+        height: 300px;
+    }
+
+    #mobile-info-cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        height: 150vh;
+    }
+    
+    #about-start {
+        margin: 0;
+    }
+
+    #profile-picture-2 {
+        margin-top: 50px;
+    }
+
+    .about-boxes {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    #experience {
+        height: 120vh;
+    }
+
+    #exp-box {
+        margin: 0;
+        padding: 0;
+    }
+
+    #edc-box {
+        margin: 0;
+        padding: 0;
+    }
+
+    .experience-boxes {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #fontend-box {
+        width: 50vh;
+        height: 70%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    #backend-box {
+        width: 50vh;
+        height: 70%;
+        margin: 0;
+    }
+    
+    #projects-boxes {
+        flex-direction: column;
+    }
+
+    #projects {
+        height: 220vh;
+    }
+}
