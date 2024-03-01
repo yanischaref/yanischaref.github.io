@@ -1,4 +1,8 @@
 @media (max-width: 900px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
     #home {
         flex-direction: column;
         justify-content:  center;
@@ -57,24 +61,52 @@
         justify-content: center;
     }
 
+    .experience-boxes {
+        width: 95%;
+    }
+
     #fontend-box {
-        width: 50vh;
+        width: 95%;
         height: 70%;
         margin: 0;
         margin-bottom: 10px;
     }
 
     #backend-box {
-        width: 50vh;
+        width: 95%;
         height: 70%;
         margin: 0;
     }
     
     #projects-boxes {
         flex-direction: column;
+        width: 95%;
     }
 
     #projects {
         height: 220vh;
+        width: 95%;
+    }
+
+    #project-1 {
+        width: 90%;
+    }
+
+    #project-2 {
+        width: 90%;
+    }
+
+    #project-3 {
+        width: 90%;
+    }
+
+    #contact-box {
+        width: 70%;
+    }
+
+    #end-links {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
     }
 }

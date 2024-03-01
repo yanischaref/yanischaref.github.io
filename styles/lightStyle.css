@@ -1,27 +1,60 @@
+/*This is what's going to change*/
 body {
     background-color: white;
+}
+
+#nav-bar a {
+    color: black;
+}
+
+.basic-info {
+    color: black;
+}
+
+#about {
+    color: black;
+}
+
+#experience {
+    color: black;
+}
+
+#projects {
+    color: black;
+}
+
+#contacts {
+    color: black;
+}
+
+#end-links a {
+    color: black;
+}
+
+/*Original Css*/
+
+html, body {
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /*Nav Bar Section*/
 
 #nav-bar a {
-    color: black;
     text-decoration: none;
     font-size: 30px;
 }
 
-a:hover {
+#nav-bar a:hover {
     color: gray;
     text-decoration: underline;
 }
 
 #nav-bar {
     display: flex;
-    background-color: rgb(210, 208, 208);
     align-items: center;
     height: 80px;
     overflow: hidden;
@@ -34,9 +67,6 @@ a:hover {
     font-size: 25px;
 }
 
-#nav-appearance-img {
-    margin-left: 25%;
-}
 
 .nav-info-container {
     display: flex;
@@ -57,6 +87,7 @@ a:hover {
 }
 
 #nav-appearance-img {
+    margin-left: 25%;
     align-self: center;
     width: auto;
     transition: opacity 0.1s ease;
@@ -87,7 +118,6 @@ a:hover {
     margin-top: 12%;
     margin-left: 50px;
     margin-right: 50px;
-    color: black;
     text-align: center;
 }
 
@@ -172,7 +202,6 @@ a:hover {
 /* about me section*/
 #about {
     display: flex;
-    color: black;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -266,7 +295,6 @@ a:hover {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    color: bkacj;
     align-items: center;
 }
 
@@ -363,7 +391,6 @@ a:hover {
 
 #projects {
     height: 100vh;
-    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -382,7 +409,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     width: 45vh;
-    height: 60vh;
+    height: 65vh;
     border: solid;
     border-color: rgb(49, 48, 48);
     border-width: 3px;
@@ -396,7 +423,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     width: 45vh;
-    height: 60vh;
+    height: 65vh;
     border: solid;
     border-color: rgb(49, 48, 48);
     border-width: 3px;
@@ -410,7 +437,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     width: 45vh;
-    height: 60vh;
+    height: 65vh;
     border: solid;
     border-color: rgb(49, 48, 48);
     border-width: 3px;
@@ -420,16 +447,16 @@ a:hover {
 }
 
 #project-1-img {
-    width: 40vh;
+    width: 80%;
     border-radius: 2rem;
 }
 #project-2-img {
-    width: 40vh;
+    width: 80%;
     border-radius: 2rem;
 }
 
 #project-3-img  {
-    width: 40vh;
+    width: 80%;
     border-radius: 2rem;
 }
 
@@ -452,7 +479,6 @@ a:hover {
 
 #contacts {
     height: 100vh;
-    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -473,7 +499,7 @@ a:hover {
     border-width: 2px;
     width: 60vh;
     border-radius: 2rem;
-    background-color: rgb(92, 89, 89);
+    background-color: rgb(236, 235, 235);
 }
 
 #email-icon {
@@ -502,7 +528,6 @@ a:hover {
 #end-links a {
     text-decoration: none;
     margin: 30px;
-    color: black;
 }
 
 #footer {
