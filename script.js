@@ -1,7 +1,7 @@
 
 var stylePath = document.getElementById("style-link")
 const themeImg = document.getElementById("nav-appearance-img");
-var darkMode = true;
+var darkMode = false;
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
