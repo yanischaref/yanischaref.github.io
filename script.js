@@ -2,9 +2,29 @@
 var stylePath = document.getElementById("style-link")
 const themeImg = document.getElementById("nav-appearance-img");
 var darkMode = false;
+var root = document.getElementById("root")
 const discordBox = document.querySelector('#discord-icon');
 const phoneBox = document.querySelector('#phone-icon');
 const popups = document.querySelectorAll('.pop-up');
+
+
+function displayWidth() {
+  var width_100 = window.innerWidth; // Get window width
+  root.style.width = `${width_100}px`
+}
+
+window.onload = displayWidth;
+
+function getWindowWidthAt100PercentZoom() {
+  var screenWidth = window.screen.width;
+  var currentZoomLevel = Math.floor((screenWidth / window.innerWidth * 100));
+  var width_100 = Math.floor(currentZoomLevel/100 * window.innerWidth)
+
+  root.style.width = `${width_100}px`
+}
+
+window.onload = getWindowWidthAt100PercentZoom;
+
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {

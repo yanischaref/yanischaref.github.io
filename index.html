@@ -12,17 +12,21 @@
     <link rel="stylesheet" href="./styles/mediaqueries.css" id="mediaqueries-link">
 </head>
 <body>
-    <div id="root">
-        <nav id="nav-bar">
+    <nav id="nav-bar">
+        <div class="nav-parts">
             <a id="nav-home" href="https://yanischaref.github.io/"><h3>Yanis</h3></a>
             <small id="nav-update-label">(Update Comming Soon!)</small>
-            <img id="nav-appearance-img" onclick="changeTheme()" src="./photos/icons/theme-icon-on.png">
+        </div>
+        <div class="nav-parts">
+            <div id="nav-theme-cont"><img id="nav-appearance-img" onclick="changeTheme()" src="./photos/icons/theme-icon-on.png"></div>
             <div id="nav-info-container">
                 <a id="nav-about" href="#about"><h6>About</h6></a>
                 <a id="nav-skills" href="#experience"><h6>Experrience</h6></a>
                 <a id="nav-projects" href="#projects"><h6>Projects</h6></a>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <div id="root">
         <div id="home">
             <img id="profile-picture" src="./photos/profile-picture.png">
             <div class="basic-info">
@@ -42,7 +46,7 @@
             <p>Know more</p>
             <h1>About Me</h1>
             <div id="about-info">
-                <img id="profile-picture-2" src="./photos/profile-picture.png">
+                
                 <div>
                     <div id="exp-box">
                         <img id="exp-box-icon" src="./photos/icons/exp-icon.png">
@@ -56,6 +60,7 @@
                         Let's collaborate and bring your ideas to life with the latest technologies!
                     </p>
                 </div>
+                <img id="profile-picture-2" src="./photos/profile-picture.png">
             </div>
         </div>
         <div id="experience">
@@ -191,7 +196,7 @@
                 <a id="end-skills" href="#experience"><h2>Skills</h2></a>
                 <a id="end-projects" href="#projects"><h2>Projects</h2></a>
             </div>
-            <footer id="footer">Copyright © 2022 Yanis Charef, All Right Reserved
+            <footer id="footer">Copyright © 2022 Yanis Charef, All Right Reserved</footer>
         </div>
         <div id="feed-user">
             <h3 id="feeduser-msgs">Success!</h3>

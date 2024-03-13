@@ -1,6 +1,7 @@
 /*This is what's going to change*/
 body {
     background-color: white;
+    transition: background-color 0.5s ease;
 }
 
 #nav-bar a,
@@ -19,7 +20,9 @@ body {
 
 html, body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -29,7 +32,6 @@ html, body {
 
 #root {
     height: 100%;
-    width: 100vw;
 }
 
 /*Nav Bar Section*/
@@ -46,17 +48,22 @@ html, body {
 
 #nav-bar {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     height: 2%;
     width: 100vw;
-    background-color: red;
-    border: 5px solid black;
     overflow: hidden;
+}
+
+.nav-parts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 #nav-home {
     align-self: center;
-    width: 16%;
     font-size: 25px;
 }
 
@@ -71,32 +78,27 @@ html, body {
 
 #nav-info-container {
     display: flex;
-    width: 30%;
-    margin-right: 15%;
+    gap: 25px;
 }
 
-#nav-about {
-    margin: 8px;
+
+#nav-theme-cont {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-width: 3px;
+    border-radius: 20rem;
+    transition: transform 0.3s ease;
 }
 
-#nav-skills {
-    margin: 8px;
-}
-
-#nav-projects {
-    margin: 8px;
-}
-
-#nav-appearance-img {
-    margin-left: 10%;
-    align-self: center;
-    width: auto;
-    transition: opacity 0.1s ease;
-}
-
-#nav-appearance-img:hover {
+#nav-theme-cont:hover {
     opacity: 0.5;
     cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.7);
 }
 
 /*Home Section*/
@@ -337,14 +339,16 @@ html, body {
 
 .skill-frontend {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin-left: 50px;
 }
 
 .skill-backend {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin-left: 50px;
 }
 
 #backend-box {
@@ -452,11 +456,8 @@ html, body {
     height: 760px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-}
-
-#contact-p {
-    margin-top: 20vh;
 }
 
 #contact-h {
@@ -465,7 +466,6 @@ html, body {
 
 #icons-cont {
     display: flex;
-    background-color: white;
 }
 
 .contact-icon {
@@ -493,7 +493,6 @@ html, body {
 }
 
 #end-links {
-    margin-top: 22vh;
     display: flex;
     gap: 30px;
 }
@@ -535,8 +534,8 @@ html, body {
 
     display: none;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 2%;
+    right: 2%;
 
     padding: 5px;
 }
