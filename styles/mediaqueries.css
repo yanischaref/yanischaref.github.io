@@ -1,112 +1,12 @@
 @media (max-width: 900px) {
     html, body {
-        overflow-x: hidden;
+        background-color: yellow;
     }
 
-    #home {
-        flex-direction: column;
-        justify-content:  center;
-        align-items: center;
-    }
-
-    .nav-info-container {
+    #nav-update-label,
+    #nav-appearance-img,
+    #nav-info-container
+    {
         display: none;
-    }
-
-    #profile-picture {
-        width: 300px;
-        height: 300px;
-    }
-
-    #mobile-info-cont {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #about {
-        flex-direction: column-reverse;
-        height: 150vh;
-    }
-    
-    #about-start {
-        margin: 0;
-    }
-
-    #profile-picture-2 {
-        margin-top: 50px;
-    }
-
-    .about-boxes {
-        margin: 0;
-        flex-direction: column;
-    }
-
-    #experience {
-        height: 120vh;
-    }
-
-    #exp-box {
-        margin: 0;
-        padding: 0;
-    }
-
-    #edc-box {
-        margin: 0;
-        padding: 0;
-    }
-
-    .experience-boxes {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .experience-boxes {
-        width: 95%;
-    }
-
-    #fontend-box {
-        width: 95%;
-        height: 70%;
-        margin: 0;
-        margin-bottom: 10px;
-    }
-
-    #backend-box {
-        width: 95%;
-        height: 70%;
-        margin: 0;
-    }
-    
-    #projects-boxes {
-        flex-direction: column;
-        width: 95%;
-    }
-
-    #projects {
-        height: 220vh;
-        width: 95%;
-    }
-
-    #project-1 {
-        width: 90%;
-    }
-
-    #project-2 {
-        width: 90%;
-    }
-
-    #project-3 {
-        width: 90%;
-    }
-
-    #contact-box {
-        width: 70%;
-    }
-
-    #end-links {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
     }
 }

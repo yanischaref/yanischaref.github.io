@@ -34,6 +34,16 @@ html, body {
     font-size: 25px;
 }
 
+#nav-update-label {
+    margin-left: 50px;
+    height: 20px;
+    width: 170px;
+    max-width: 170px;
+    min-width: 170px;
+    font-weight: 100;
+    color: white;
+}
+
 .nav-info-container {
     display: flex;
     width: 30%;
@@ -53,7 +63,7 @@ html, body {
 }
 
 #nav-appearance-img {
-    margin-left: 25%;
+    margin-left: 10%;
     align-self: center;
     width: auto;
     transition: opacity 0.1s ease;
