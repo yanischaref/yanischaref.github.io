@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yanis</title>
     <link rel="icon" type="image/png" href="./photos/developer.svg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/lightStyle.css" id="style-link">
     <link rel="stylesheet" href="./styles/mediaqueries.css" id="mediaqueries-link">
 </head>
 <body>
-    <nav id="nav-bar">
+    <nav id="nav-bar" class="sections">
         <div class="nav-parts">
             <a id="nav-home" href="https://yanischaref.github.io/"><h3>Yanis</h3></a>
             <small id="nav-update-label">(Update Comming Soon!)</small>
@@ -25,9 +27,10 @@
                 <a id="nav-projects" href="#projects"><h6>Projects</h6></a>
             </div>
         </div>
+        <div onclick="toggleHamb()" id="hamb-menu"><img id="hamb-icon" src="./photos/icons/hamb-open-icon.svg"></div>
     </nav>
     <div id="root">
-        <div id="home">
+        <div id="home" class="sections">
             <img id="profile-picture" src="./photos/profile-picture.png">
             <div class="basic-info">
                 <p id="home-info-hello">Hello, I'm</p>
@@ -42,12 +45,11 @@
                 <a href="https://twitter.com/" target="_blank"><img id="x-icon" src="./photos/icons/x-icon.jpeg"></a>
             </div>
         </div>
-        <div id="about">
+        <div id="about" class="sections">
             <p>Know more</p>
             <h1>About Me</h1>
             <div id="about-info">
-                
-                <div>
+                <div id="about-info-texts">
                     <div id="exp-box">
                         <img id="exp-box-icon" src="./photos/icons/exp-icon.png">
                         <h4 id="exp-box-h">Experience</h4>
@@ -63,10 +65,10 @@
                 <img id="profile-picture-2" src="./photos/profile-picture.png">
             </div>
         </div>
-        <div id="experience">
+        <div id="experience" class="sections">
             <p id="experience-p">Explore My</p>
             <h1 id="experience-h"><b>Experience</b></h1>
-            <div class="experience-boxes">
+            <div id="experience-boxes">
                 <div id="fontend-box">
                     <h1 id="front-box-header">Frontend Development</h1>
                     <div id="front-box-clm-1">
@@ -123,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <div id="projects">
+        <div id="projects" class="sections">
             <p id="projects-p">Explore My Recent</p>
             <h1 id="projects-h">Projects</h1>
             <div id="projects-boxes">
@@ -140,7 +142,7 @@
                         <button id="project-1-tb"><a href="https://yanis-charef.github.io/mydestiny" target="_blank" style="text-decoration: none; color: black;">Try it</a></button>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project slected-mob-project">
                     <img class="projects-imgs" src="./photos/project-2.jpeg">
                     <h3 id="project-2-h">Coding language for kids</h3>
                     <p class="project-descriptions">
@@ -168,33 +170,33 @@
                 </div>
             </div>
         </div>
-        <div id="contacts">
+        <div id="contacts" class="sections">
             <p id="contact-p">Get In Touch</p>
             <h1 id="contact-h">Contact Me</h1>
             <div id="icons-cont">
                 <div class="contact-icon" onclick="buttonToUrl('https://www.instagram.com/yanis.charef')">
-                    <img src="./photos/icons/insta-icon.svg">
+                    <img class="contact-icon-img" src="./photos/icons/insta-icon.svg">
                 </div>
                 <div class="contact-icon" onclick="buttonToUrl('https://twitter.com/charefyanis')">
-                    <img src="./photos/icons/x-icon.svg">
+                    <img class="contact-icon-img" src="./photos/icons/x-icon.svg">
                 </div>
                 <div class="contact-icon" onclick="buttonToUrl('https://github.com/yanischaref')">
-                    <img src="./photos/icons/github-icon.svg">
+                    <img class="contact-icon-img" src="./photos/icons/github-icon.svg">
                 </div>
                 <div onclick="copyUsernameToClipboard()" id="discord-icon" class="contact-icon">
-                    <img src="./photos/icons/discord-icon.svg">
+                    <img class="contact-icon-img" src="./photos/icons/discord-icon.svg">
                     <div class="pop-up">The Discord username will be copied to clipboard</div>
                 </div>
                 <div onclick="copyNumberToClipboard()" id="phone-icon" class="contact-icon" onclick="popUp()">
-                    <img src="./photos/icons/whatsapp-icon.svg">
+                    <img class="contact-icon-img" src="./photos/icons/whatsapp-icon.svg">
                     <div class="pop-up">My number will be copied to clipboard</div>
                 </div>
             </div>
             <div id="end-links">
-                <a id="end-home" href="#nav-bar"><h2>Home</h2></a>
-                <a id="end-about" href="#about"><h2>About</h2></a>
-                <a id="end-skills" href="#experience"><h2>Skills</h2></a>
-                <a id="end-projects" href="#projects"><h2>Projects</h2></a>
+                <a class="end-link" id="end-home" href="#nav-bar">Home</a>
+                <a class="end-link" id="end-about" href="#about">About</a>
+                <a class="end-link" id="end-skills" href="#experience">Skills</a>
+                <a class="end-link" id="end-projects" href="#projects">Projects</a>
             </div>
             <footer id="footer">Copyright © 2022 Yanis Charef, All Right Reserved</footer>
         </div>

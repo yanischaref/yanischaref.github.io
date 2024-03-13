@@ -1,7 +1,7 @@
 /*This is what's going to change*/
-body {
+
+html, body {
     background-color: white;
-    transition: background-color 0.5s ease;
 }
 
 #nav-bar a,
@@ -23,15 +23,26 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: poppins;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    transition: background-color 0.5s ease;
 }
+
+.sections {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+  }
+  
+.fade-in {
+    opacity: 1;
+  }
 
 #root {
     height: 100%;
+    overflow-x: hidden;
 }
 
 /*Nav Bar Section*/
@@ -73,7 +84,7 @@ html, body {
     width: 170px;
     max-width: 170px;
     min-width: 170px;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 #nav-info-container {
@@ -99,6 +110,23 @@ html, body {
     cursor: pointer;
     transform: translateY(-2px);
     box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.7);
+}
+
+#hamb-menu {
+    display: none;
+}
+
+/*Important setting*/
+
+#home,
+#about,
+#experience,
+#projects,
+#contacts {
+    height: max-content;
+}
+button {
+    font-family: poppins;
 }
 
 /*Home Section*/
@@ -222,27 +250,24 @@ html, body {
     gap: 50px;
 }
 
-
-#about-paragraph {
-    width: 500px;
+#about-info-texts {
+    width: 35%;
+    height: 100%;
 }
 
-.about-boxes {
-    margin-top: 5vh;
-    display: flex;
+#about-paragraph {
+    width: 100%;
 }
 
 #exp-box {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 150px;
+    width: 60%;
+    height: 40%;
     border: solid;
     border-width: 2px;
     border-color: black;
     border-radius: 2rem;
-    margin-right: 5px;
-    background-color: white;
     color: black;
     justify-content: center;
     align-items: center;
@@ -270,23 +295,6 @@ html, body {
     margin: 0;
 }
 
-#edc-box {
-    width: 300px;
-    height: 150px;
-    border: solid;
-    border-width: 2px;
-    border-color: black;
-    border-radius: 2rem;
-    margin-left: 5px;
-    background-color: white;
-    color: black;
-}
-
-#edc-box-icon {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    width: 30px;
-}
 
 /*Experience section*/
 
@@ -301,7 +309,7 @@ html, body {
     font-size: 3rem;
 }
 
-.experience-boxes {
+#experience-boxes {
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -319,6 +327,7 @@ html, body {
     border: solid;
     border-color: gray;
     align-items: center;
+    font-size: 1rem;
 }
 
 #front-box-header {
@@ -390,7 +399,7 @@ html, body {
 /*Projects*/
 
 #projects {
-    height: 760px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,6 +409,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }
 
 .project {
@@ -412,7 +422,6 @@ html, body {
     border-color: rgb(49, 48, 48);
     border-width: 3px;
     border-radius: 2rem;
-    margin-right: 50px;
     padding: 30px;
     transition: transform 0.3s ease-in-out;
     transform: translateY(0px);
@@ -431,8 +440,9 @@ html, body {
 }
 
 .project-descriptions {
+    font-family: poppins;
     font-size: .75rem;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 #projects button {
@@ -507,6 +517,11 @@ html, body {
     text-decoration: underline;
 }
 
+.end-link {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 .pop-up {
     display: none;
     position: absolute;
@@ -522,6 +537,7 @@ html, body {
 }
 
 #footer {
+    width: max-content;
     justify-content: flex-end;
 }
 

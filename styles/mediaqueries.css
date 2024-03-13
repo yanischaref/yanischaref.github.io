@@ -1,12 +1,132 @@
 @media (max-width: 900px) {
-    html, body {
-        background-color: yellow;
+    html, body, #root {
+        overflow-x: hidden;
     }
 
+    #hamb-menu {
+        display: flex;
+    }
     #nav-update-label,
-    #nav-appearance-img,
     #nav-info-container
     {
         display: none;
+    }
+
+    #home,
+    #about-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    #profile-picture,
+    #profile-picture-2 {
+        margin: 0;
+        width: 60vw;
+        height: 60vw;
+    }
+
+    #exp-box {
+        width: 100%;
+    }
+
+    #icons-cont {
+        width: 90%;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-icon {
+        display: flex;
+        width: 35px;
+        height: 35px;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-icon-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #end-links {
+        margin: 0;
+        padding: 0;
+    }
+
+    .end-link {
+        margin: 0;
+        padding: 0;
+        height: min-content;
+        font-size: 1rem;
+    }
+
+    footer {
+        display: flex;
+        width: 100vw;
+        font-size: .75rem;
+        align-items: center;
+    }
+
+    #about-info {
+        width: 90%;
+    }
+
+    #about-info-texts {
+        width: 100%;
+    }
+
+    #experience-boxes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projects-boxes {
+        display: grid;
+
+        gap: .5rem;
+        grid-auto-flow: column;
+        grid-auto-columns: 21%;
+
+        overflow-x: scroll;
+    }
+    #projects-boxes {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        overflow-x: scroll;
+    }
+    .project {
+        width: 80vw;
+        height: 50vh;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .slected-mob-project {
+        box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.7);
+        transform: translateY(-10px);
+        width: 90%;
+        height: 70%;
+    }
+
+    #fontend-box {
+        margin: 0;
+        width: 90%;
+        font-size: .5rem;
+    }
+
+    #backend-box {
+        margin: 0;
+        width: 90%;
+        font-size: .5rem; 
     }
 }
