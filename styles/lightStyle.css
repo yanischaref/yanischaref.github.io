@@ -16,6 +16,10 @@ html, body {
     color: black;
 }
 
+.contact-icon {
+    background-color: rgb(34, 34, 34);
+}
+
 /*Original Css*/
 
 html, body {
@@ -234,7 +238,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 760px;
 }
 
 #profile-picture-2 {
