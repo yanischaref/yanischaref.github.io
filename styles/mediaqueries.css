@@ -98,33 +98,18 @@
     }
     #projects-boxes {
         display: flex;
-        flex-direction: row;
-        gap: 50px;
-        justify-content: center;
-        align-items: center;
-        background-color: red;
-        overflow-x: scroll;
-        white-space: nowrap;
+        flex-direction: column;
     }
+
     .project {
-        width: 200px;
-        height: 200px;
-        transition: transform 0.3s ease-in-out;
+        width: 80%;
+        height: 50%;
     }
 
     .projects-imgs {
         width: 20%;
         font-size: .8rem;
     }
-
-    /*
-    .slected-mob-project {
-        box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.7);
-        transform: translateY(-10px);
-        width: 90vh;
-        height: 50vh;
-    }
-    */
 
     #fontend-box {
         margin: 0;

@@ -9,6 +9,12 @@ const discordBox = document.querySelector('#discord-icon');
 const phoneBox = document.querySelector('#phone-icon');
 const popups = document.querySelectorAll('.pop-up');
 
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollableDiv = document.getElementById("projects-boxes");
+  var middleScroll = scrollableDiv.scrollWidth / 2 - scrollableDiv.clientWidth / 2;
+  scrollableDiv.scrollLeft = middleScroll;
+});
+
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
   return (
