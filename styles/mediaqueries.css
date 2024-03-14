@@ -4,12 +4,17 @@
     }
 
     #hamb-menu {
-        display: flex;
+        display: none;
     }
-    #nav-update-label,
     #nav-info-container
     {
         display: none;
+    }
+
+    #nav-update-label {
+        margin: 0;
+        white-space: nowrap;
+        font-size: .75rem;
     }
 
     #home,
