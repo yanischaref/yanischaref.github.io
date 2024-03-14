@@ -17,6 +17,11 @@
         font-size: .75rem;
     }
 
+    #nav-bar {
+        background-color: red;
+        justify-content: space-evenly;
+    }
+
     #home,
     #about-info {
         display: flex;
